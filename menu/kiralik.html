@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../main.css">
+	<title></title>
+</head>
+<body>
+
+
+		<div id="ustkısım">
+			<p class="uyeicon"></p>
+			<p class="uye">ÜYE OL</p>
+			<p class="uyeicon"></p>
+			<p class="uye">GİRİŞ YAP</p>
+		</div><!--üst opacityli kısım-->
+
+		<div class="logo">
+			<a href="../index.html">
+				<img src="../logo/anasayfalogo.png">
+			</a>	
+		</div><!--logo-->
+	
+		
+
+	<div class="menu">
+	    <ul>
+	        <li><a href="../index.html"></a></li> <!--ana sayfa-->
+	        <li><a href="otel.html">OTEL</a></li>
+	        <li ><a>ULAŞIM </a>
+	             <ul>
+	                 <li><a href="kara.html">KARA</a></li>
+	                <li><a href="hava.html">HAVA</a></li>
+	                <li><a href="deniz.html">DENİZ</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="turlar.html">TURLAR</a></li>
+	        <li><a href="yerler.html">GÖRÜLECEK YERLER</a></li>
+	        <li><a href="kiralik.html">KİRALIK ARAÇ</a></li>
+	        <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+	        <li id="iletisim"><a href="iletisim.html">İLETİŞİM</a></li>
+	    </ul>
+	</div>
+	<div class="arabosluk"><p>...</p></div>
+	<div class="icerik">
+		<div id="araçkiralama">
+			<form>
+			  <div class="radiobuton"> <input type="radio" name="kira" value="yurtdışı" checked>Yurtdışı Araç Kiralama<br></div>
+			  <div class="radiobuton"><input type="radio" name="kira" value="yurtiçi"/>Yurtiçi Araç Kiralama<br></div> 
+			  <div class="radiobuton"><input type="radio" name="kira" value="havalimanı">Havalimanı Transfer<br></div> 
+			  <div class="radiobuton"><input type="radio" name="kira" value="şöförlü">Şöförlü Araç Kiralama<br></div>
+			  <div class="radiobuton"><input type="radio" name="kira" value="havaaracı">Hava Aracı Kiralama<br></div>
+			  <div class="radiobuton"><input type="radio" name="kira" value="denizaracı">Deniz Aracı Kiralama</div>  
+			</form>
+		</div>
+		<div id="kiralamaformu">
+			<table cellpadding="0" cellspacing="0" border="0" width="472" class="header">
+			  <tbody>
+			    <tr>
+			      <td class="header" valign="top">Yurtdışı Araç Kiralama Talep Formu</td>
+			    </tr>
+			    <tr>
+			      <td class="def10" align="center" height="15"></td> 
+			    </tr>   
+			  </tbody>
+			</table>
+			<table border="0" width="472" cellspacing="0">
+			    <tbody><tr>
+			      <td align="center" style="border-bottom:1px solid #d4d4d4;">
+			      <br>
+			      <form name="formYurtDisiArac" id="formYurtDisiArac" class="crm" novalidate="novalidate">
+			        <input type="hidden" name="formType" value="Y">
+			        <table cellpadding="0" border="0" cellspacing="5">
+			          
+			          
+			          <tbody><tr>
+			            <td class="def11"><b>Kiralama Yapılacak Ülke * :</b></td>
+			            <td><input type="text" name="ulke" class="musform" style="width: 272px;"></td>
+			          </tr>         
+			          <tr>
+			            <td class="def11"><b>Kiralama Başlangıç Şehir *  :</b></td>
+			            <td><input type="text" name="ssehir" class="musform" style="width: 272px;"></td>
+			          </tr>
+			          <tr>
+			            <td class="def11"><b>Kiralama Başlangıç Tarih ve Saat :</b></td>
+			            <td><input type="date">
+			             
+			              <input type="time">
+			            </td>
+			          </tr>       
+			          <tr>
+			            <td class="def11"><b>Kiralama Bitiş Şehir *  :</b></td>
+			            <td><input type="text" name="esehir" class="musform" style="width: 272px;"></td>
+			          </tr> 
+			                  
+			          <tr>
+			            <td class="def11"><b>Kiralama Bitiş Tarih ve Saat  :</b></td>
+			            <td>
+			            <input type="date">
+			             <input type="time">
+			            </td>
+			          </tr> 
+			          <tr>
+			            <td class="def11"><b>İstenilen araç tipi * :</b></td>
+			            <td><input type="text" name="aracTipi" class="musform" style="width: 272px;"></td>
+			          </tr>
+			          <tr>
+			            <td class="def11"><b>Uçuş Detayları * :</b></td>
+			            <td><input type="text" name="ucusDetay" class="musform" style="width: 272px;"></td>
+			          </tr>
+			          <tr>
+			            <td><b>Adı Soyadı * :</b></td>
+			            <td><input type="text" name="name" style="width: 272px;"></td>
+			          </tr>       
+			          <tr>
+			            <td><b>Sabit telefon :</b></td>
+			            <td><input type="text" name="phoneCode" size="3" maxlength="3"> <input type="text" name="phone" maxlength="7" size="7"></td>
+			          </tr>
+			          <tr>
+			            <td></td><td>
+			              <label for="phoneCode" generated="true"></label><br>
+			              <label for="phone" generated="true"></label>
+			            </td>
+			          </tr>       
+			          <tr>
+			            <td><b>Cep telefonu * :</b></td>
+			            <td><input type="text" name="mobilCode" size="3" maxlength="3"> <input type="text" name="mobil" id="mobil" maxlength="7" size="7"></td>
+			          </tr> 
+			          <tr>
+			            <td></td><td>
+			              <label for="mobilCode" generated="true"></label><br>
+			              <label for="mobil" generated="true"></label>
+			            </td>
+			          </tr>   
+			          <tr>
+			            <td><b>E-Mail adresi * :</b></td>
+			            <td><input type="text" name="mail" style="width: 272px;"></td>
+			          </tr>   
+			          <tr>
+			            <td valign="top"><b>Düşünceler ve notlar :</b></td>
+			            <td>
+			            <textarea style="width: 272px;" name="not" rows="5"></textarea>
+			            </td>
+			          </tr>
+			      
+			          <tr>
+			            <td style="padding-top:10px;" colspan="2">
+			              <span style="float:left"> 
+			                <input type="submit" value="Formu Gönder">
+			                <input type="Button" value="Formu Temizle" class="vazgecbtnNew" onclick="formreset()">
+			              </span>
+
+			            </td>
+			    
+			          </tr>
+			                                                                                              
+			        </tbody></table>
+			      </form> 
+			        <br>
+			      </td>
+			    </tr>
+			    <tr>
+			      <td height="30">* Doldurulması gerekli zorunlu alanlar</td>
+			    </tr>                   
+			    </tbody></table>
+			    <!-- orta kolon content bitiyor --> 
+			  </td>
+			  <td width="20"></td>
+
+			</tr>
+			</tbody></table>
+		</div>
+
+	<div id="footer">
+
+		<div id="sosyalicon">
+			<a href="https://tr.pinterest.com/gezegcen/" target="_blank"><img  src="../sosyalicon/pinterest.png" target=""></a>
+			<a href="https://twitter.com/gezeg_cen" target="_blank"><img  src="../sosyalicon/twitter.png" target=""></a>
+			<a href="https://plus.google.com/u/0/110055100764109963551" target="_blank"><img  src="../sosyalicon/googleplus.png" target=""></a>
+			<a href="https://www.facebook.com/gez.egen.921" target="_blank"><img  src="../sosyalicon/facebook.png" target=""></a>
+			<a href="https://www.instagram.com/gezegcen/" target="_blank"><img  src="../sosyalicon/instagram.png" target=""></a>
+			<a href="https://www.youtube.com/channel/UCVWNDbbSPWG_5CUoz9S6Qyg" target="_blank"><img  src="../sosyalicon/youtube.png" target=""></a>
+		</div><!--sosyal medya iconları-->
+
+		<div id="footorta">
+			<table>
+
+				<tr><td >Misafir İlişkileri</td><td>İletişim</td><td >Turlar</td><td >Online Bilet</td></tr>
+
+				<tr><td >Kurumsal</td><td>Ulaşım</td><td >Araç</td><td >Gemi Turları</td></tr>
+
+				<tr><td >Yurt Dışı Turları</td><td>Oteller</td><td >Kültür Turları</td><td >Site Haritası</td></tr>
+
+			</table>
+		</div><!--orta kısım-->
+
+		<div id="copyright">
+			<p id="copyrightP">
+				Copyright © 2017 GEZegen SEYAHAT ACENTELERİ A.Ş. Tüm hakları saklıdır.
+			</p> <!--COPYRİGHT-->
+		</div>
+		
+	</div>
+
+</body>
+</html>
